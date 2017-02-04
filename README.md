@@ -18,17 +18,14 @@ dependencies {
 Usage is really simple. Start the reply activity with:
 
 ```java
-reply.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        WearableReplyActivity.start(activity, new String[] {"test 1", "test 2" });
-    }
-});
+WearableReplyActivity.start(activity);
+WearableReplyActivity.start(activity, R.array.reply_options);
+WearableReplyActivity.start(activity, new String[] {"test 1", "test 2" });
 ```
 
-You can omit the `String[]`, or use an array resource. If you omit it, the app will use the default canned responses: "Yes", "No", "Maybe", "Ok", and "Thanks".
+If you omit the `String[]` or the array resource, the `WearableReplyActivity` will display the default canned responses: "Yes", "No", "Maybe", "Ok", and "Thanks".
 
-Then, when the user is done entering the text, the results will be delivered to your `Activity#onActivityResult` method, and can be pulled with:
+When the user has done the text input, the results will be delivered to your `Activity#onActivityResult` method, and can be pulled with:
 
 ```java
 @Override
