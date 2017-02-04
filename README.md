@@ -39,6 +39,15 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 }
 ```
 
+## Contributing
+
+Please fork this repository and contribute back using [pull requests](https://github.com/klinker24/wearable-reply/pulls). Features can be requested using [issues](https://github.com/klinker24/wearable-reply/issues). All code, comments, and critiques are greatly appreciated.
+
+## Changelog
+
+The full change log for the library can be found [here](https://github.com/klinker24/wearable-reply/blob/master/CHANGELOG.md).
+
+
 ## License
 
     Copyright 2017 Luke Klinker
