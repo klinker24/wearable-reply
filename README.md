@@ -11,7 +11,7 @@ To include it in your project, add this to your module's `build.gradle` file:
 ```groovy
 dependencies {
 	...
-	compile 'com.klinkerapps:wearable-reply:1.0.0'
+	compile 'com.klinkerapps:wearable-reply:1.0.01
 }
 ```
 
